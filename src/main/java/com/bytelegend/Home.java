@@ -1,7 +1,5 @@
 package com.bytelegend;
 
-import java.util.Arrays;
-
 public class Home {
     private final Cat[] cats;
 
@@ -11,13 +9,6 @@ public class Home {
 
     public Cat[] getCats() {
         return cats;
-    }
-
-    @Override
-    public String toString() {
-        return "Home{" +
-                "cats=" + Arrays.toString(cats) +
-                '}';
     }
 
     public static void main() {

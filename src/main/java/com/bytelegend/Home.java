@@ -1,5 +1,7 @@
 package com.bytelegend;
 
+import java.util.Arrays;
+
 public class Home {
     private final Cat[] cats;
 

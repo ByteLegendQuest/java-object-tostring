@@ -16,4 +16,9 @@ public class Home {
         // It should print "Home{cats=[Tom,Jerry]}"
         System.out.println(home);
     }
+
+    @Override
+    public String toString() {
+        return "Home{" + "cats=" + Arrays.toString(cats) + '}';
+    }
 }

@@ -11,6 +11,12 @@ public class Home {
         return cats;
     }
 
+    @Override
+    public String toString() {
+        String template = "Home{cats=[%s,%s]}";
+        return String.format(template, cats[0], cats[1]);
+    }
+
     public static void main() {
         Home home = new Home(new Cat[] {new Cat("Tom"), new Cat("Jerry")});
         // It should print "Home{cats=[Tom,Jerry]}"

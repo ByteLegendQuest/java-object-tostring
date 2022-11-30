@@ -11,6 +11,13 @@ public class Home {
         return cats;
     }
 
+    @Override
+    public String toString() {
+        return "Home{" +
+                "cats=" + Arrays.toString(cats) +
+                '}';
+    }
+
     public static void main() {
         Home home = new Home(new Cat[] {new Cat("Tom"), new Cat("Jerry")});
         // It should print "Home{cats=[Tom,Jerry]}"
